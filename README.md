@@ -1,17 +1,17 @@
 **MiniQ** is a queuing system which allows multiple producers to write messages in queue. Multiple consumers can read from the queue concurrently. On each request consumer will get different set of messages. Producer gets message Id in response when he writes the message.
 
-ExpressJs and MongoDb is used as a solution for this problem statement.
+ExpressJs and MongoDb have been used as a solution for this problem statement.
 
-MongoDb is the database staoged used. it handles **High write load**. Gives high availability on single server and also easy to configure to work on clusters. Modifying db schema is very easy.
+MongoDb is the database used. It handles **High write load**, gives high availability on a single server and is also easy to configure while working on clusters. Modifying database schema is very easy.
 
-Expressjs is very fast single threaded and event driven system. which helps in handling lots of request at once.
+Expressjs is a fast, single threaded and event driven system which helps in handling a lot of requests all at once.
 
-Sharding is the approach can be used for scaling database. By sharding we can store databse on multiple systems. Replication can be achieved by replica set.
+Sharding is the approach that can be used for scaling the database. Through sharding, we can store the database on multiple systems. Replication can be achieved by replica set.
 
 Further,
 
-1. we can impelement logical clocks for maintaining ordering of messages. This will be helpful when cluster is implemented.
-2. Atlease-once-delivery can be implemented for guarantying that message will be served atleast once.
+1. We can implement logical clocks for maintaining ordering of messages. This will be helpful when cluster is implemented.
+2. Atlease-once-delivery can be implemented for guarantying that the message will be served at least once.
 
 ### List of API endpoints ###
 ###Poll :###
