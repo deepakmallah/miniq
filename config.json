@@ -1,0 +1,7 @@
+{
+  "processedMessages": "logs/processedMessages.json",
+  "countOfItemsToProcess": 2,
+  "timeout": 2000,
+  "dbhost": "localhost",
+  "dbname": "miniq"
+}
